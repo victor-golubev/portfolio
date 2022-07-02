@@ -1,0 +1,110 @@
+/* About Me Area css
+============================================================================================ */
+.about_me_area{
+}
+.about_me_inner{
+	.about_me_photo{
+		text-align: center;
+		img{
+			border-radius: 50%;
+			width: 300px;
+    		margin-left: 75px;
+		}
+	}
+}
+.about_me_block{
+	h4{
+		color: $dip;
+		font-size: 36px;
+		margin-bottom: 18px;
+		text-transform: uppercase;
+	}
+	.about_me_text{
+		max-width: 495px;
+		line-height: 24px;
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
+}
+/* End About Me Area css
+============================================================================================ */
+
+
+/* Tools Skills Area css
+============================================================================================ */
+.tools_skills_area{
+	background: #f4f4fb;
+	&.feature_tow{
+		background: #fff;
+		.feature_item{
+			background: #f4f4fb;
+			&:hover{
+				background: #fff;
+			}
+		}
+	}
+}
+.tools_skills_inner{
+	margin-bottom: -30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 148px);
+	justify-content: space-between;
+}
+.tools_skills_item{
+	width: 148px;
+	padding: 20px;
+	border-radius: 10px;
+	@include transition;
+	background: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+	i{
+		margin-bottom: 35px;
+		display: block;
+		&:before{
+			margin-left: 0px;
+			font-size: 60px;
+			color: #e1e1e1;
+			line-height: 60px;
+			background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			filter: grayscale(100%); 
+		}
+	}
+	img{
+		max-width: 58px;
+		max-height: 58px;
+		filter: grayscale(100%); 
+		margin-bottom: 35px;
+	}
+	h4{
+		color: $dip;
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 0;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+	.main_btn{
+		padding: 0px 30px;
+		line-height: 38px;
+	}
+	&:hover{
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+		border-color: #fff;
+		i{
+			&:before{
+				filter: grayscale(0%); 
+				@include transition;
+			}
+		}
+		img{
+			filter: grayscale(0%); 
+			@include transition;
+		}
+	}
+}
+/* End Tools Skills Area css
+============================================================================================ */

@@ -1,0 +1,81 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+	background: #f4f4fb;
+    position: relative;
+	z-index: 10;
+    background-attachment: fixed;
+	.main_btn{
+		padding: 0px 90px;
+		margin-top: 34px
+	}
+}
+.footer_inner{
+	
+}
+#contactForm{
+	.form-group{
+		font-size: 14px;
+		position: relative;
+		.form-control{
+			line-height: 50px;
+			height: 50px;
+
+		}
+		textarea.form-control{
+			margin-top: 25px;
+			line-height: 26px;
+			height: 150px;
+		}
+		label.label{
+			position: absolute;
+			left: 14px;
+			top: 12px;
+			transition: 0.2s ease;
+			cursor: text;
+		}
+		label.error{
+			position: absolute;
+			top: auto;
+			left: auto;
+			bottom: -34px;
+    		right: 0px;
+			color: #65B8FB;
+		}
+	}
+	.field--filled label.label{
+		font-size: 12px;
+		-webkit-transform: translateY(-40px);
+		transform: translateY(-40px);
+		transition: 0.2s ease;
+	}
+}
+.social{
+	text-align: center;
+	margin-top: 80px;
+	.social_item{
+		@include transition;
+		padding: 0 20px;
+		i:before{
+			margin-left: 0px;
+			font-size: 40px;
+			color: #e1e1e1;
+			line-height: 40px;
+			background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			filter: grayscale(100%); 
+		}
+		&:hover{
+			i{
+				&:before{
+					filter: grayscale(0%); 
+					@include transition;
+				}
+			}
+		}
+	}
+}
+
+/* End Footer Area css
+============================================================================================ */
