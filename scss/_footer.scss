@@ -7,7 +7,6 @@
     background-attachment: fixed;
 	.main_btn{
 		padding: 0px 90px;
-		margin-top: 34px
 	}
 }
 .footer_inner{
@@ -17,13 +16,13 @@
 	.form-group{
 		font-size: 14px;
 		position: relative;
+		margin-bottom: 40px;
 		.form-control{
 			line-height: 50px;
 			height: 50px;
 
 		}
 		textarea.form-control{
-			margin-top: 25px;
 			line-height: 26px;
 			height: 150px;
 		}
@@ -38,9 +37,12 @@
 			position: absolute;
 			top: auto;
 			left: auto;
-			bottom: -34px;
+			bottom: -26px;
     		right: 0px;
 			color: #65B8FB;
+			text-align: right;
+			font-size: 13px;
+			line-height: 15px;
 		}
 	}
 	.field--filled label.label{

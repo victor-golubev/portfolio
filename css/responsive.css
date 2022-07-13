@@ -10,6 +10,15 @@
 @media (max-width:1300px){
 }
 @media (max-width:1199px){
+	#contactForm .form-group{
+		margin-bottom: 30px;
+	}
+	#contactForm .form-group label.error{
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 0;
+	}
 	/* Main Menu Area css
 	============================================================================================ */
 	.header_area .navbar .nav .nav-item {
@@ -38,10 +47,10 @@
 	.home_banner_area .inner_info .banner_content h2{
 		font-size: 45px;
 		line-height: 47px;
-		min-height: 120px;
 	}
 	.about_me_inner .about_me_photo img{
-		margin-left: 0 !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
 		margin-top: 0 !important;
 	}
 	.about_me_block{
@@ -214,6 +223,9 @@
 	}
 }
 @media (max-width:767px){
+	#contactForm .form-group label.error{
+		margin-bottom: 5px;
+	}
 	.home_banner_area {
 		min-height: 500px;
 	}
@@ -285,9 +297,8 @@
 		margin-top: 71px;
 	}
 	.home_banner_area .inner_info .banner_content h2{
-		font-size: 38px;
+		font-size: 32px;
 		line-height: 40px;
-		min-height: 100px;
 	}
     /* Home Banner Area css
 	============================================================================================ */
@@ -362,9 +373,6 @@
 	.footer-area {
 		padding: 70px 0px;
 	}
-	input[type="email"]{
-		margin-top: 25px;
-	}
 	.social{
 		margin-bottom: 30px;
 	}
@@ -391,6 +399,19 @@
 	}
 	.projects_fillter .filter li {
 		margin-right: 20px;
+	}
+	label.error{
+		position: absolute;
+		top: auto;
+		left: auto;
+		bottom: -34px;
+		right: 0px;
+		color: #65B8FB;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: right;
+		margin-bottom: 0;
+		width: 70%;
 	}
 }
 

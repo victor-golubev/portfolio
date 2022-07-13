@@ -372,5 +372,8 @@
                 return false;
             });
             /* End Scroll to top */   
-
+            /* Parallax */   
+            var my_photo = document.getElementById('my_photo');
+            var parallaxInstance = new Parallax(my_photo);
+            /* End Parallax */   
 })(jQuery)
